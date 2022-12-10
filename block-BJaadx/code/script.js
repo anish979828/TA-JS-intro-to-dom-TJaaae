@@ -1,51 +1,91 @@
 // 1. Change the title of the page to `Hello AltCampus!`
+      document.title = "Hello Altcampus"
 
 // 2. Select the element using the children property:
 
 //    - Select the `h1` element and change the value to `Learning DOM`
+let h1 = document.body.children[0]
+h1.innerText = "Learning Dom"
+
 
 //    - Select the first `li` element inside the `ul` with class `topics` and change the innerText to `all about document`
+let li = document.body.children[5].children[0]
+li.innerText = "all about document"
+
+
 //    - Select the input element with name `email`
+let input = document.body.children[6].children
+console.log(input)
 
 // 3. Log the number (using console.log) of children of all the `li` element inside the ul with class `topics`
+let ul = document.body.children[5].children
+console.log(ul.length)
+
 
 // 4. Select the first input using the `type` selector and store them in variable named `emailInput`
+let emailInput = document.querySelector("input")
+
 
 // 5. Select the ul element using class selector and store in `topics`
+let topics = document.querySelector(".topics")
 
 // 6. Select the first label element and store in `label`
+let label = document.querySelector("label")
 
 // 7. Select the input of type `checkbox` with the `id` selector and store in `inputCheckbox`
+let inputCheckbox = document.querySelector("#remember")
+console.log(inputCheckbox)
 
 // 8. Select the input of type password using Attribute selectors. (eg: input[type="text"]) and store in `password`
+
 
 // 9. Select the input using the placeholder attribute selector with value `password` and store in `attrPassword`
 
 // 10. Select all the `li` element and store in `allTopics`
+let allTopics = document.querySelectorAll("li")
 
 // 11. Select all the input element of any type and store in `allInput`
+let allInput = document.querySelectorAll("input")
 
 // 12. Use forEach to console the `innerText` property of all the li element in `allTopics` variable.
+allTopics.forEach(element => {
+    console.log(element.innerText)
+});
 
 // 13. Select all the elements with class `list` and store in variable `listOfSelectedTopics`
+let listOfSelectedTopics = document.querySelectorAll(".list")
 
 // 14. Select the first li element inside the `ul` element using `>` (direct child) and store in `firstLi`
+let firstLi = document.querySelector("ul>li")
 
 // 15. Select all the img element and log the number of element saying `The total number of img element is ---`
+let img = document.querySelectorAll("img")
+console.log(`The total number of img element is ${img.length} `)
 
 // 16. Select all the `p` element and store in `allPElement`
+let allPElement = document.querySelector("p")
 
 // 17. Select all the buttons and log the count of buttons.
+let buttons = document.querySelectorAll("button")
+console.log(buttons.length)
 
 // 18. Select all the `label` element and log the count.
+let countLabel = document.querySelectorAll("label")
+console.log(countLabel.length)
 
 // 19. Select all the elements with `id` of `test`
+let id = document.querySelectorAll("#test")
 
 // 20. Select the first element with id `test` using `getElementById`
+let element = document.getElementById("test")
 
 // 21. Select the parent element of the element stored in `topics` variable (#5) and log the element.
+let parentInput = topics[0].parentElement
+console.log(parentInput)
+
 
 // 22. Select the next element sibling of the element stored in `topics` variable (#5) and log the element.
+
 
 // 23. Select the previous element sibling of the element stored in `topics` variable (#5) and change the `innerText` property to `Learning About Walking the DOM`.
 
