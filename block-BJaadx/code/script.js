@@ -28,6 +28,7 @@ let emailInput = document.querySelector("input")
 
 // 5. Select the ul element using class selector and store in `topics`
 let topics = document.querySelector(".topics")
+console.log(topics)
 
 // 6. Select the first label element and store in `label`
 let label = document.querySelector("label")
@@ -37,9 +38,14 @@ let inputCheckbox = document.querySelector("#remember")
 console.log(inputCheckbox)
 
 // 8. Select the input of type password using Attribute selectors. (eg: input[type="text"]) and store in `password`
+let password =  document.querySelector('[type="password"]')
+console.log(password)
 
 
 // 9. Select the input using the placeholder attribute selector with value `password` and store in `attrPassword`
+let attrPassword = document.querySelector('[placeholder ="password"]')
+console.log(attrPassword)
+
 
 // 10. Select all the `li` element and store in `allTopics`
 let allTopics = document.querySelectorAll("li")
@@ -80,19 +86,29 @@ let id = document.querySelectorAll("#test")
 let element = document.getElementById("test")
 
 // 21. Select the parent element of the element stored in `topics` variable (#5) and log the element.
-let parentInput = topics[0].parentElement
-console.log(parentInput)
+console.log(topics.parentElement)
 
 
 // 22. Select the next element sibling of the element stored in `topics` variable (#5) and log the element.
-
+console.log(topics.nextElementSibling)
 
 // 23. Select the previous element sibling of the element stored in `topics` variable (#5) and change the `innerText` property to `Learning About Walking the DOM`.
+console.log(topics.previousElementSibling.innerText = "Learning About Walking the Dom")
 
 // 24. Select the first element child of the element stored in `topics` variable (#5) and change the `innerText` property of the element to `This is the first child element`.
+let child = (topics.firstElementChild)
+console.log(child.innerText ="This is the first child element")
 
 // 25. Select the last element child of the element stored in `topics` variable (#5) and log the `typeof` the element.
+let lastchild = topics.lastElementChild
+console.log(typeof lastchild)
 
 // 26. Select the element with type `fieldset` and store in a variable named `fieldsetElm`.
+let fieldsetElm = document.querySelector("fieldset")
+console.log(fieldsetElm)
 
 // 27. Select the parent element of the element stored in `fieldsetElm` variable (#5) and log the `typeof` the element.
+let type = fieldsetElm.parentElement
+console.log(typeof type)
+
+
