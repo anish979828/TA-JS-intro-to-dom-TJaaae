@@ -2,6 +2,7 @@ let everyone = got.houses.reduce((acc, cv) => {
     acc = acc.concat(cv.people);
     return acc;
   }, []);
+  let ul = document.querySelector("ul")
   
   everyone.forEach((elm) => {
     let li = document.createElement("li");
