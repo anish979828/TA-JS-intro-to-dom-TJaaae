@@ -63,10 +63,9 @@ createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 */
 
 // Your code goes here
-function createTodoList(array){
-  let ul = document.createElement("ul")
-  array.map(ele => )
-   
+function createTodoList(array = []){
+  let html = `<ul>${array.map(ele => `<li>${ele}</li>`).join()}</ul>`
+  return html;
 }
 
 
